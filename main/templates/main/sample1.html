@@ -1,8 +1,53 @@
 {% extends 'main/Main.html'%}
 {% load static %}
 {% block content %}
-
-
-
+<div>
+    <iframe src="{% static 'samples\backpack\char_count_distribution.html' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></iframe>
+</div>
+<div>
+    <img class="wordcloud_img" src="{% static 'samples\backpack\important_words_reviews_text_wordcloud.png' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></img>
+</div>
+<div>
+    <img class="wordcloud_img" src="{% static 'samples\backpack\important_words_reviews_titles_wordcloud.png' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></img>
+</div>
+<div>
+    <iframe src="{% static 'samples\backpack\month_vs_day_distribution.html' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></iframe>
+</div>
+<div>
+    <img class="wordcloud_img" src="{% static 'samples\backpack\negative_reviews_text_wordcloud.png' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></img>
+</div>
+<div>
+    <img class="wordcloud_img" src="{% static 'samples\backpack\negative_reviews_titles_wordcloud.png' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></img>
+</div>
+<div>
+    <img class="wordcloud_img" src="{% static 'samples\backpack\positive_reviews_text_wordcloud.png' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></img>
+</div>
+<div>
+    <img class="wordcloud_img" src="{% static 'samples\backpack\positive_reviews_titles_wordcloud.png' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></img>
+</div>
+<div>
+    <iframe src="{% static 'samples\backpack\punctuation_count_distribution.html' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></iframe>
+</div>
+<div>
+    <iframe src="{% static 'samples\backpack\sentiment_over_time_distribution.html' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></iframe>
+</div>
+<div>
+    <iframe src="{% static 'samples\backpack\word_count_distribution.html' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></iframe>
+</div>
+<div>
+    <iframe src="{% static 'samples\backpack\year_vs_month_distribution.html' %}" title="char Count distribution"
+        width="50%" height="500" style="border:none;"></iframe>
+</div>
 
 {% endblock content %}

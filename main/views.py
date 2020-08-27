@@ -8,7 +8,7 @@ from .forms import *
 
 def home(request):
     context = {}
-    return render(request, 'main/NewHome.html', context)
+    return render(request, 'main/Home.html', context)
 
 
 def about(request):
