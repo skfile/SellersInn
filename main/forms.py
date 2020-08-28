@@ -10,3 +10,11 @@ class DataForm(ModelForm):
 
         model = userForm
         fields = '__all__'
+
+
+class EmailForm(ModelForm):
+
+    class Meta:
+
+        model = newsletter
+        fields = '__all__'

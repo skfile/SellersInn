@@ -10,3 +10,4 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
 
         userForm.objects.all().delete()
+        newsletter.objects.all().delete()

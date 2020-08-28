@@ -21,7 +21,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="{% url 'home' %}">Sellers Inn</a>
+        <a class="navbar-brand " href="{% url 'home' %}"><img class="logo_scales"
+                src="{% static "images\logotest2.png" %}" style="width:100%;" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,17 +40,20 @@
                     <a class="nav-link" href="#"></a>
                 </li> {% endcomment %}
                 <li class="nav-item active">
-                    {% comment %} <a class="nav-link" href="{% url 'store' %}">About <span class="sr-only">(current)</span></a> {% endcomment %}
+                    {% comment %} <a class="nav-link" href="{% url 'store' %}">About <span
+                            class="sr-only">(current)</span></a> {% endcomment %}
                 </li>
                 <li class="nav-item active">
-                    {% comment %} <a class="nav-link" href="{% url 'about' %}">Contact <span class="sr-only">(current)</span></a> {% endcomment %}
+                    {% comment %} <a class="nav-link" href="{% url 'about' %}">Contact <span
+                            class="sr-only">(current)</span></a> {% endcomment %}
                 </li>
                 {% comment %} <li class="nav-item active">
                     <a class="nav-link" href="{% url 'contact' %}">Samples <span class="sr-only">(current)</span></a>
                 </li> {% endcomment %}
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Samples
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Samples
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{% url 'samplereport1' %}">Thermometer</a>
@@ -63,12 +67,14 @@
                     <a class="nav-link" href="{% url 'signup' %}">Request An Analysis</a>
                 </li>
 
-            {% comment %} </ul> Where you search the website!
+                {% comment %}
+            </ul> Where you search the website!
             <!-- Button Below: -->
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search"
-                    placeholder="Search the Shop Engine" aria-label="Search" id="myinput">
-                <button onclick="getInputValue();" id="search-button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search the Shop Engine"
+                    aria-label="Search" id="myinput">
+                <button onclick="getInputValue();" id="search-button" class="btn btn-outline-success my-2 my-sm-0"
+                    type="submit">Search</button>
             </form>
             <ul> {% endcomment %}
 
@@ -87,17 +93,17 @@
 
 
     {% endblock content %}
-    
+
 
 
     <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © Sellers Inn. All rights reserved.</p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright © Sellers Inn. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </footer>
 
 

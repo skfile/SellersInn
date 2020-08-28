@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 # from django.db.models import Q
 from .forms import DataForm
@@ -7,7 +7,17 @@ from .forms import *
 
 
 def home(request):
-    context = {}
+
+    form = EmailForm()
+    if request.method == 'POST':
+        #print('Printing POST', request.POST)
+        form = DataForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+
+    context = {'form': form}
+
     return render(request, 'main/Home.html', context)
 
 
@@ -32,8 +42,24 @@ def sample3(request):
 
 
 def register(request):
-    context = {}
+
+    form = DataForm()
+    if request.method == 'POST':
+        #print('Printing POST', request.POST)
+        form = DataForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+
+    context = {'form': form}
+
     return render(request, 'main/signup.html', context)
+
+
+def login(request):
+    context = {}
+    return render(request, 'main/login.html', context)
+
 
 # def store(request):
     # products = crawledData.objects.all()

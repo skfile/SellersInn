@@ -1,6 +1,45 @@
 .wordcloud_img {
     height: auto; 
     width: auto; 
-    max-width: 500px; 
-    max-height: 600px;
+    max-width: 600px; 
+    max-height: 500px;
+}
+.center_margin_format {
+    margin: 50px;
+}
+.cool_margin_format {
+    padding: 150px;
+    margin: 150px;
+}
+.number_scales {
+    height: auto; 
+    width: auto; 
+    max-width: 115; 
+    max-height: 115px;
+}
+.logo_scales {
+    height: auto; 
+    width: auto; 
+    max-width: 135px; 
+    max-height: 80px;
+}
+/* Centered text */
+.special_centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  /* Container holding the image and the text */
+.special_container {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* background-image: url("{% static "images\mainbannerv2.png" %}"); */
+}
+  .banner_img {
+    height: auto; 
+    width: auto; 
+    max-width: 100%; 
+    max-height: 25%;
 }
