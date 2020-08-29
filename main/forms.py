@@ -18,3 +18,11 @@ class EmailForm(ModelForm):
 
         model = newsletter
         fields = '__all__'
+
+
+class ContactForm(ModelForm):
+
+    class Meta:
+
+        model = contact
+        fields = '__all__'

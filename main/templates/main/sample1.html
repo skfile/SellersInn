@@ -7,91 +7,75 @@
 
     <h1 class="text-center">A Sample Reviews Analysis of a Thermometer</h1>
 
-    <p class="lead">You can find this product <a href="https://amazon.com">here</a>. All products on Amazon are
+    <p class="lead">You can find this product <a href="https://www.amazon.com/Metene-Forehead-Thermometer-Infrared-Suitable/dp/B06XJ35FG4/ref=cm_cr_arp_d_product_top?ie=UTF8">here</a>. All products on Amazon are
         avaliable to be
         analyzed.</p>
 
     <h4 class="mt-4">Scroll Below to interact with our Analysis</h4>
 
-    {% comment %} <div class="row mb-3">
-        <div class="col-sm-6 col-md-8 themed-grid-col">
-            <iframe src="{% static 'samples\thermometer\char_count_distribution.html' %}" title="char Count distribution"
-                width="100%" height="500" style="border:none;"></iframe>
-        </div>
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
-        </div>
-    </div> {% endcomment %}
-
-    {% comment %} <div class="row mb-3">
-
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
-        </div>
-        <div class="col-sm-6 col-md-8 themed-grid-col">
-            <iframe src="{% static 'samples\thermometer\word_count_distribution.html' %}" title="char Count distribution"
-                width="100%" height="500" style="border:none;"></iframe>
-        </div>
-    </div> {% endcomment %}
+    <h6 class="mt-4">Throughout this sample report, suggestions from our team of eCommerce Experts will be written to help better understand what this data means, and how you can benefit from it.</h6>
 
     <div class="row mb-3">
-
         <div class="col-sm-6 themed-grid-col">
-            <iframe src="{% static 'samples\thermometer\char_count_distribution.html' %}" title="char Count distribution"
-                width="100%" height="500" style="border:none;"></iframe>
+            <iframe src="{% static 'samples\thermometer\char_count_distribution.html' %}"
+                title="char Count distribution" width="100%" height="500" style="border:none;"></iframe>
         </div>
         <div class="col-sm-6 themed-grid-col">
-            <iframe src="{% static 'samples\thermometer\word_count_distribution.html' %}" title="char Count distribution"
-                width="100%" height="500" style="border:none;"></iframe>
+            <iframe src="{% static 'samples\thermometer\word_count_distribution.html' %}"
+                title="char Count distribution" width="100%" height="500" style="border:none;"></iframe>
         </div>
     </div>
 
     <div class="row mb-3">
-        <div class="col-sm-6 col-md-8 themed-grid-col">
+            <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">The above graphs are examples of EDA (Exploratory Data Analysis). They help you understand how much your customers even say in your product. And though at first glance it may not seem that interesting, rememeber, the more you customers write, the more invested they are in the product. So if your customers are writing a lot, that's a good sign.</h6>
+            <br></br>
+            <br></br>
+        </div>
+        <div class="col-md-8 themed-grid-col">
             <iframe src="{% static 'samples\thermometer\year_vs_month_distribution.html' %}"
                 title="char Count distribution" width="100%" height="500" style="border:none;"></iframe> </div>
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
-        </div>
     </div>
 
     <div class="row mb-3">
-
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
+        <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">The graphs shown here depict frequency of reviews made over time. You can learn a great deal about the seasonal nature of your product from the distributions. And from that, learn when are the best time to send targeted advertisements. Even if your product isn't seasonal, looking at these graphs can help you learn a lot about the nature of your customers.</h6>
+            <br></br>
+            <br></br>
         </div>
-        <div class="col-sm-6 col-md-8 themed-grid-col">
-            <iframe src="{% static 'samples\thermometer\month_vs_day_distribution.html' %}" title="char Count distribution"
-                width="100%" height="500" style="border:none;"></iframe> </div>
+        <div class="col-md-8 themed-grid-col">
+            <iframe src="{% static 'samples\thermometer\month_vs_day_distribution.html' %}"
+                title="char Count distribution" width="100%" height="500" style="border:none;"></iframe> </div>
     </div>
 
     <div class="row mb-3">
-        <div class="col-sm-6 col-md-8 themed-grid-col">
-            <img class="wordcloud_img" src="{% static 'samples\thermometer\important_words_reviews_text_wordcloud.png' %}"
+            <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">This wordcloud, despite looking more like a canvas than a data-visualization, depicts the most infulential words in the texts of all the reviews ever written about your product. These words were picked out using an AI algorithm, and they can be helpful in understanding your customers thoughts on your product.</h6>
+            <br></br>
+            <br></br>
+        </div>
+        <div class="col-md-8 themed-grid-col">
+            <img class="wordcloud_img"
+                src="{% static 'samples\thermometer\important_words_reviews_text_wordcloud.png' %}"
                 title="char Count distribution" width="100%" height="500" style="border:none;"></img> </div>
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
-        </div>
     </div>
 
     <div class="row mb-3">
 
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
+        <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">This wordcloud depicts the most influential words in the titles of all the reviews ever written about your product. Given titles are likely the best customer-created summaries you can get. These words were picked out using an AI algroithm, and they can be helpful in understanding your customers thoughts on your product</h6>
+            <br></br>
+            <br></br>
         </div>
-        <div class="col-sm-6 col-md-8 themed-grid-col">
+        <div class="col-md-8 themed-grid-col">
             <img class="wordcloud_img"
                 src="{% static 'samples\thermometer\important_words_reviews_titles_wordcloud.png' %}"
                 title="char Count distribution" width="100%" style="border:none;"></img>
@@ -99,50 +83,57 @@
     </div>
 
     <div class="row mb-3">
-        <div class="col-sm-6 col-md-8 themed-grid-col">
+            <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">Now we're getting into the specialized wordclouds. This one in particular describes all the words most commonly found in the most positive reviews given on this product. Like all wordclouds in this report, this was also made using AI (Sentiment Analysis). These words would be especially helpful to include in marketing, given the best words are the ones your customers give you.</h6>
+            <br></br>
+            <br></br>
+        </div>
+        <div class="col-md-8 themed-grid-col">
             <img class="wordcloud_img" src="{% static 'samples\thermometer\positive_reviews_text_wordcloud.png' %}"
                 title="char Count distribution" width="100%" height="500" style="border:none;"></img>
-        </div>
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
         </div>
     </div>
 
     <div class="row mb-3">
-
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
+        <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">Wordclouds don't only depict good news, sadly. As with every product, there are always people who don't like it. And instead of having to read all the negative comments, our algorithm analyzes the words in the most influential negative reviews, and from that tells you which words are likely to be associated with negative reviews. Hopefully helping to understand what your customer don't like about your products.</h6>
+            <br></br>
+            <br></br>
         </div>
-        <div class="col-sm-6 col-md-8 themed-grid-col">
+        <div class="col-md-8 themed-grid-col">
             <img class="wordcloud_img" src="{% static 'samples\thermometer\negative_reviews_text_wordcloud.png' %}"
                 title="char Count distribution" width="100%" height="500" style="border:none;"></img>
         </div>
     </div>
 
     <div class="row mb-3">
-        <div class="col-sm-6 col-md-8 themed-grid-col">
+        <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">You may notice that these words look pretty similar to a couple of the wordclouds. This wordcloud depicts the most influential words in the positive reviews of your product. But what makes this wordcloud special is its based on the titles of the reviews. These titles, like we said, are really helpful in that their derived from the best summaries you can get, so therefore its all the more helpful.</h6>
+            <br></br>
+            <br></br>
+        </div>
+        <div class="col-md-8 themed-grid-col">
             <img class="wordcloud_img" src="{% static 'samples\thermometer\positive_reviews_titles_wordcloud.png' %}"
                 title="char Count distribution" width="100%" height="500" style="border:none;"></img>
-        </div>
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
         </div>
     </div>
 
     <div class="row mb-3">
 
-        <div class="col-sm-6 col-md-4 themed-grid-col">
-            <h3>
-
-            </h3>
+        <div class="col-md-4 themed-grid-col">
+            <br></br>
+            <br></br>
+            <h6 class="text-center">Our last wordcloud, as you could probably guess, is the result of analyzing all the negative titles. Though this may sound somewhat disheartening to hear that they are many words associated with unhappy customers, remember, these words are useful. You can look for the phrases within your descriptions that are similar to these words to help improve your overall SEO and customer acquisition rate.</h6>
+            <br></br>
+            <br></br>
         </div>
-        <div class="col-sm-6 col-md-8 themed-grid-col">
+        <div class="col-md-8 themed-grid-col">
             <img class="wordcloud_img" src="{% static 'samples\thermometer\negative_reviews_titles_wordcloud.png' %}"
                 title="char Count distribution" width="100%" height="500" style="border:none;"></img>
         </div>
@@ -154,9 +145,9 @@
                 title="char Count distribution" width="100%" height="500" style="border:none;"></iframe>
         </div>
     </div>
+    <br></br>
+    <h6 class="mt-4">This last graph is likely the best one. It will help in understanding how your customer's views of your product has changed over time. So you can analyze any decision you have made, and see how your customers have reacted.</h6>
+    <br></br>
+    <h8>Want your own analysis done? <a href="{% url 'signup' %}">Click Here</a> </h8>
 
-    <div class="row mt-4">
-        <h4>Read</h4>
-    </div>
-
-{% endblock content %}
+    {% endblock content %}

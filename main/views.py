@@ -11,7 +11,7 @@ def home(request):
     form = EmailForm()
     if request.method == 'POST':
         #print('Printing POST', request.POST)
-        form = DataForm(request.POST)
+        form = EmailForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('/')
@@ -59,6 +59,21 @@ def register(request):
 def login(request):
     context = {}
     return render(request, 'main/login.html', context)
+
+
+def contact(request):
+
+    form = ContactForm()
+    if request.method == 'POST':
+        #print('Printing POST', request.POST)
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/')
+
+    context = {'form': form}
+
+    return render(request, 'main/contact.html', context)
 
 
 # def store(request):

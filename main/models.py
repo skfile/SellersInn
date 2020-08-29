@@ -24,3 +24,12 @@ class newsletter(models.Model):
 
     def __str__(self):
         return self.Email
+
+
+class contact(models.Model):
+    Name = models.CharField(max_length=200, null=True)
+    Email = models.CharField(max_length=400, null=True)
+    Question = models.TextField()
+
+    def __str__(self):
+        return self.Name

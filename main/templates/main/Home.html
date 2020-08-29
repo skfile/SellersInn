@@ -7,10 +7,9 @@
     <div class="container text-center special_centered">
       <div class="col-12  mt-2">
         <h1>We Provide Analytics</h1>
-        <h7>Every seller deserves the powerdul analytics the companies you use to make
+        <h7>Every seller deserves the powerful analytics the companies you use to make
           decisions.
           What we do is provide analytics for sellers like you.
-          Wse help you find out what your customers are thinking.
           We want to help you sell the best products possible.
         </h7>
         <br></br>
@@ -25,8 +24,8 @@
     <div class="row">
       <div class="col-12 text-center">
         <br></br>
-        <h2>What Kind of Analytics? See Below</h2>
-        <p>We're living in the era of AI. At Sellers Inn, we use the most cutting edge combination of statical models
+        <h2>What Kind of Analytics?</h2>
+        <p>We're living in the era of AI. At Sellers Inn, we use the most cutting edge combination of statistical models
           and machine
           learning. We want to help you understand what your customers are thinking. Here are some of the technologies
           we
@@ -45,7 +44,7 @@
             <div class="media-body">
               <h5 class="mt-0 mb-1">Plotly Tooklit</h5>
               Real Data. Real Graphs. Real Results. Plotly is one of the best techonliges for accomplishing this goal.
-              Learn more about plotly <a href="https://plotly.com/">here</a>
+              Learn more about Plotly <a href="https://plotly.com/">here</a>
             </div>
           </li>
         </ul>
@@ -56,7 +55,7 @@
             <img class="mr-3 number_scales" src="{% static "images\2transparent.png" %}" alt=" placeholder image">
             <div class="media-body">
               <h5 class="mt-0 mb-1">Natural Language Processing</h5>
-              How can Siri, Cortana and Alexa all understand us? In three words: Natural Language Proccesing. Now,
+              How can Siri, Cortana and Alexa all understand us? In three words: Natural Language Processing. Now,
               instead of just major corporations using NLP, you can use it too.
             </div>
           </li>
@@ -81,20 +80,21 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2>Want to see a sample?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, et, placeat !</p>
+        <h2>What you'll get</h2>
+        <p>We know that data can be boring, which is why we try to make it as fun as possible.</p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6 col-12 text-center">
-        <img class="img-fluid" src="{% static "images/400x400.gif" %}" alt="">
-        <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-        <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+        <iframe src="{% static 'samples\thermometer\word_count_distribution.html' %}" title="char Count distribution"
+          class="embed-responsive embed-responsive-1by1" width="400px" height="400px" style="border:none;"></iframe>
+        <h4>Interactive Graphs</h4>
+        <h6>Why just look, when you can interact</h6>
       </div>
       <div class="col-md-6 col-12 text-center mt-md-0 mt-2">
-        <img class="img-fluid" src="{% static "images/400x400.gif" %}" alt="">
-        <h4>Lorem ipsum dolor sit amet, consectetur elit</h4>
-        <h6>Lorem ipsum dolor sit amet, consectetur elit</h6>
+        <img class="" height="400px" width="400px" src="{% static "images/wordcloudv2.png" %}" alt="">
+        <h4>Data-Driven Wordclouds</h4>
+        <h6>Instead of a List, we make the words come alive</h6>
       </div>
     </div>
   </div>
@@ -104,11 +104,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, magni, doloribus, possimus eum sapiente
-          deleniti doloremque fugit ut expedita molestiae iusto debitis eveniet modi obcaecati ipsam quos quis labore
-          dicta.</p>
-        <button type="button" class="btn btn-success">Get in touch</button>
+        <h1>Would you like to Learn More</h1>
+        <p>We get it. And if you'd like to learn more, feel free to contact us at the link below. We'll do our best to
+          get in touch in at least one business day.</p>
+        <button type="button" class="btn btn-success" href="{% url 'contact' %}">Contact Us</button>
       </div>
     </div>
   </div>
@@ -121,8 +120,8 @@
         <h3 class="text-center">WHO WE ARE</h3>
         <p>Simply put: a group of sellers. We know just how difficult it is to sell products on Amazon. We want
           to bring the
-          best of the newest technolgies to sellers just like you. That's really it. We hope we can help in making your
-          products the best the possibliy can be.</p>
+          best of the newest technologies to sellers just like you. That's really it. We hope we can help in making your
+          products the best the possibly can be.</p>
       </div>
       <div class="col-md-4 col-12">
         <h3 class="text-center">GET IN TOUCH</h3>
@@ -130,7 +129,8 @@
           <strong>Sellers Inn.</strong><br>
           Greater Boston<br>
           MA, 02420, US<br>
-          <abbr title="Email">@sellersin.</abbr>
+          {% comment %} <abbr title="Email">@sellersin.</abbr> {% endcomment %}
+          <a href="{% url 'contact' %}">Contact Us</a>
         </address>
       </div>
       <div class="col-md-4 col-12">
