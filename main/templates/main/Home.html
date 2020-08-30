@@ -1,21 +1,20 @@
 {% extends 'main/Main.html'%}
 {% load static %}
 {% block content %}
+
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="{% static 'css/small.css' %}">
+
 <section>
   <div class="text-center special_container container-fluid">
     <img class="banner_img" src="{% static "images\mainbannerv3.png" %}" alt="banner">
-    <div class="container text-center special_centered">
-      <div class="col-12  mt-2">
-        <h1>We Provide Analytics</h1>
-        <h7>Every seller deserves the powerful analytics the companies you use to make
-          decisions.
-          What we do is provide analytics for sellers like you.
-          We want to help you sell the best products possible.
-        </h7>
-        <br></br>
-        <p><a class="btn btn-primary btn-lg text-center" href="{% url 'signup' %}" role="button">Request a Free Analysis
-            »</a></p>
-        <!-- </div> -->
+    <div class="text-center special_centered">
+      <div class="col-12 mt-2">
+        <h1 class="realfont"><a href="{% url 'signup' %}" style="color: white;">We Provide Analytics</a></h1>
+        <div class="dissapear">
+          <p>Large Corporations are constantly using complex analytics and AI algorithms to compete
+            with
+            sellers like you. What we do is bring those same analytics to you.
+        </div>
       </div>
     </div>
 </section>
@@ -104,7 +103,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1>Would you like to Learn More</h1>
+        <h1>Learn More</h1>
         <p>We get it. And if you'd like to learn more, feel free to contact us at the link below. We'll do our best to
           get in touch in at least one business day.</p>
         <button type="button" class="btn btn-success" href="{% url 'contact' %}">Contact Us</button>
