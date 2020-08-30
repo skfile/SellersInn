@@ -1,0 +1,26 @@
+version: "3.4"
+
+# services:
+#   sellersinn:
+#     image: sellersinn
+#     build:
+#       context: .
+#       dockerfile: Dockerfile
+#     ports:
+#       - 8000
+
+services:
+  ###
+  # services
+  ###
+  django:
+    build: .
+    command: python manage.py runserver 0.0.0.0:3001
+    volumes:
+      - .:/app
+    ports:
+      - "3001:3001"
+    tty: true
+    stdin_open: true
+    dns:
+      - 8.8.8.8

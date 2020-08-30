@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.postgres',
 
-    'main'
+    'main',
+
+    'google_analytics'
 ]
 
 MIDDLEWARE = [
@@ -143,3 +145,7 @@ STATICFILES_DIRS = (
 # )
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+GOOGLE_ANALYTICS = {
+    'google_analytics_id': 'UA-93164009-3',
+}

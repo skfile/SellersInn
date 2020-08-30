@@ -9,8 +9,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sellers Inn</title>
-    <meta name="description" content="Sellers Inn - A Reviews Analyzer Application">
+    <meta name="description" content="Sellers Inn is a Reviews Analyzer Service that helps sellers understand what their customers are thinking and make smarter, more effective decisions about their products.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <meta name="Keywords" content="eCommerce, Analytics, Sellers, Amazon, EBay, Walmart, Graphs, Data, Machine Learning, Artifical Intelligence, AI, Sentiment Analysis, Products, Customers, Plotly, Natural Language Processing">
+    <link rel="icon" href="{% static "images\favicon.png" %}" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -92,12 +94,16 @@
         </div>
     </nav>
 
+
     {% block content %}
 
 
     {% endblock content %}
 
-
+    {% load google_analytics_tags %}
+    <div style="display:none">
+        <img src="{% google_analytics %}" width="0" height="0" />
+    </div>
 
     <footer class="text-center">
         <div class="container">
