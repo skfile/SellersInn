@@ -1,6 +1,10 @@
-# Reviews Analyzer Running Instructions
+# Reviews Analyzer
 
-## Setup
+Django-Based Web Application
+
+## Running Instructions
+
+### Setup
 1 - Install requirements
 ````
 $ pip install -r requirements.txt
@@ -9,14 +13,14 @@ $ pip install -r requirements.txt
 ````
 $ python manage.py migrate
 ````
-## Start the project.
+### Start the project.
 
 In order to run Django
 ````
 $ python manage.py runserver
 ````
 
-## Setup by Docker (Actually recommended in this case)
+### Setup by Docker (Recommended)
 1 - Build application
 ````
 $ docker-compose build
