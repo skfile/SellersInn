@@ -2,6 +2,8 @@
 
 Django-Based Web Application
 Designed to help small businsess selling on Amazon analyze their product reviews using Machine Learning (Natural Language Processing).
+Data obtained by Scrapy (Web Scraper). Python packages matplotlib, sklearn and plotly used among others for custom analysis (see sample pages)
+Data Analysis (scraping and analysis) code available upon request.
 
 ## Running Instructions
 
