@@ -1,6 +1,7 @@
 # Reviews Analyzer
 
 Django-Based Web Application
+Designed to help small businsess selling on Amazon analyze their product reviews using Machine Learning (Natural Language Processing).
 
 ## Running Instructions
 
