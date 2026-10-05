@@ -1,3 +1,11 @@
+# Project archive
+
+An earlier Django web application for exploring e-commerce product reviews with natural-language processing and visual analysis.
+
+This repository is archived and is not actively maintained. Its code and history are preserved for reference.
+
+---
+
 # Reviews Analyzer - Django-Based Web Application
 
 Designed to help small businsess selling on Amazon analyze their product reviews using Machine Learning (Natural Language Processing).
